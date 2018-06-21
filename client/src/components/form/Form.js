@@ -12,17 +12,17 @@ class Form extends React.Component {
     },
     error: {}
   };
-  onChange(e) {
+  onChange = e => {
     this.setState({
       data: { ...this.state.data, [e.target.name]: e.target.value }
     });
-  }
-  async handleSubmit(e) {
+  };
+  handleSubmit = e => {
     e.preventDefault();
 
-    const contact = await axios.post("/contact", {
-      data,
-    });
+    // const contact = await axios.post("/contact", {
+    //   data,
+    // });
     console.log(this.state.data);
     this.setState({
       data: {
@@ -31,7 +31,7 @@ class Form extends React.Component {
         message: ""
       }
     });
-  }
+  };
   render() {
     const { data } = this.state;
     return (

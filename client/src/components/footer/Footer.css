@@ -1,0 +1,24 @@
+.footer {
+  width: 100%;
+  background: #ccc;
+  /* height: 150px; */
+}
+.footer__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__list--item {
+  padding: 20px;
+}
+.footer__list--item:nth-child(1) {
+  margin-right: auto
+}
+.footer__link {
+  text-decoration: none;
+  color: rgb(63, 59, 59)
+}
+.footer__list--icon {
+  font-size: 30px;
+}
