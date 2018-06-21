@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from '../src/components/navbar/Navbar'
 import Banner from '../src/components/banner/Banner'
 import Card from "../src/components/cards/Card";
-
+import Form from "../src/components/form/Form";
 
 class App extends Component {
   render() {
@@ -13,6 +13,7 @@ class App extends Component {
         <Navbar/>
         <Banner/>
         <Card/>
+        <Form/>
       </div>
     );
   }
