@@ -19,11 +19,13 @@ class Form extends React.Component {
   };
   handleSubmit = e => {
     e.preventDefault();
-
-    // const contact = await axios.post("/contact", {
-    //   data,
-    // });
-    console.log(this.state.data);
+    const { data } = this.state;
+    const contact = axios
+      .post("/contact", {
+        data
+      })
+      .then(res => console.log(res));
+    // console.log(this.state.data);
     this.setState({
       data: {
         name: "",
